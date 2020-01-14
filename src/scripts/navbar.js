@@ -26,8 +26,10 @@ function display(mode) {
 }
 $(function () {
     $('#dropdown-trigger').hover(function () {
-        $('#dropdown').css('height', '350px');
+        $('#dropdown').css('height', '300px');
         $('#dropdown-content').css('display', 'grid');
+        $('#arr').removeClass('down');
+        $('#arr').addClass('up');
         if (displaying == false) {
             display(true);
             displaying = true;
@@ -36,6 +38,8 @@ $(function () {
         // on mouseout, reset the background colour
         $('#dropdown').css('height', '0px');
         $('#dropdown-content').css('display', 'none');
+        $('#arr').removeClass('up');
+        $('#arr').addClass('down');
         if (displaying == true) {
             display(false);
             displaying = false;

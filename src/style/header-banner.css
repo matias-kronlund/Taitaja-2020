@@ -1,5 +1,22 @@
 .header-banner{
-    margin-top: 70px;
+    margin-top: 50px;
+    height: calc(100vh - 50px);
+
+}
+.bg{
+    top: 70px;
+    width: 100%;
+    position: absolute;
     height: calc(100vh - 70px);
-    background: orange;
+    background-image: url("https://www.trelleborg.se/globalassets/files/bildningsforvaltningen/grundskola/bilder/klagstorp/klagstorp.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(50%) blur(8px) brightness(150%);
+    -webkit-transform: translate3d(0, 0, 0);
+    overflow: hidden;
+    z-index: -100;
+}
+svg{
+    margin:30px;
 }

@@ -1,10 +1,11 @@
 header{
     position: absolute;
-    height: 70px;
+    height: 50px;
     background-color: #3A405A;
-    line-height: 70px;
+    line-height: 50px;
     width: 100%;
     top: 0;
+    z-index: 100;
 }
 header nav ul li{
     color: #F9DEC9;
@@ -18,6 +19,7 @@ header nav ul{
 .link{
     margin: 5px;
     color:#F9DEC9;
+    font-size: 14px;
 }
 .link:hover{
     color: #F9DEC9;
@@ -31,7 +33,7 @@ header nav ul{
 }
 #dropdown{
     position: fixed;
-    top: 70px;
+    top: 50px;
     background: #3A405A;
     height: 0px;
     width: 750px;
@@ -56,8 +58,10 @@ header nav ul{
 }
 #dropdown-content a{
     color: #F9DEC9;
+    font-size: 16px;
 }
 #dropdown-content p{
-    line-height: 150%;
+    line-height: 19px;
     color:white;
+    font-size: 14px;
 }
