@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="src/style/main.css">
     <link rel="stylesheet" href="src/style/header-banner.css">
     <link rel="stylesheet" href="src/style/footer.css">
+    <link rel="stylesheet" href="src/style/page-content.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li id="dropdown-trigger" >
-                    <a href="" class="link">Tietoja <i id="arr" class="down"></i></a> 
+                    <a class="link">Tietoja <i id="arr" class="down"></i></a> 
                     <div id="dropdown">
                         <div id="dropdown-content">
                             <div>
@@ -68,6 +69,15 @@
         </svg>
         
     </div>
+    <div class="page-content">
+        <div class="menu">
+            <button onclick="showSolar();">Panelit</button><button>Koneet</button>
+        </div>
+        <div id="solar"></div>
+        <div id="computers">
+
+        </div>
+    </div>
     <footer>
         <div class="footer-container">
             <div>
@@ -101,5 +111,7 @@
         </div>
     </footer>
     <script src="src/scripts/navbar.js"></script>
+    <script src="src/scripts/paneeli.js"></script>
+    <script src="src/scripts/menu-buttons.js"></script>
 </body>
 </html>

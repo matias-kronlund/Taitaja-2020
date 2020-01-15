@@ -3,24 +3,31 @@ let dropdownRight = 0;
 for (const link of navlinks) {
     dropdownRight += link.offsetWidth;
 }
-document.getElementById("dropdown").style.right = dropdownRight + "px";
+function sizeDropdown(){
+    if(window.innerWidth > 1120){
+        document.getElementById("dropdown").style.right = dropdownRight + "px";
+        document.getElementById("dropdown").style.width = "750px";
+    }else{
+        document.getElementById("dropdown").style.right = "0px";
+        document.getElementById("dropdown").style.width = "100%";
+    }
+}
+$( window ).resize(function() {
+    sizeDropdown();
+});
+sizeDropdown();
+
 let style = document.getElementById("dropdown-content").style;
 let displaying = false;
 function display(mode) {
-    let stop = false;
+
     if (mode == true) {
-        setInterval(() => {
-            if (stop == false) {
+        setTimeout(() => {
                 style.opacity = "1";
-                stop = true;
-            }
         }, 300);
     } else {
-        setInterval(() => {
-            if (stop == false) {
+        setTimeout(() => {
                 style.opacity = "0";
-                stop = true;
-            }
         }, 300);
     }
 }

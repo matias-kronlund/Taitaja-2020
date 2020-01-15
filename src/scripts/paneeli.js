@@ -1,5 +1,4 @@
 document.onload = loadXMLDoc();
-
 function loadXMLDoc() {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
@@ -66,9 +65,14 @@ function myFunction(xml){
             suntime += panel[date].paiste;
             prod += panel[date].tuotanto;
         }
-        table += '<tr><th colspan="5">Päivämäärä:' + date + ', auringon paistetta keskimäärin '  + suntime + ' tuntia/paneeli</th></tr>';
-        table += "<tr><th>Paneelit 1-3</th><th>Tuotanto kWh</th><th>Tietokoneiden kulutus kWh</th><th>Aurinkovoiman kattama %-osuus</th><th>Verkkovirran %-osuus</th></tr>";
-        table += "<tr><td>yhteensä</td><td>" + prod + "</td><td>" + computer_tot + "</td><td>" + countSolarConsumptionPercentage(prod, computer_tot) + "</td><td>" + countNetConsumptionPercentage(prod, computer_tot) + "</td></tr>";
+        table += '<div class="slora-data">';
+            table += `<div class="solar-title"><h3>Päivämäärä: ${date}, auringon paistetta keskimäärin ${suntime} tuntia/paneeli</h3></div>`;
+            table += `<div class="solar-col"><p>Paneelit 1-3</p><p>Yhteensä</p></div>`;
+            table += `<div class="solar-col"><p>Tuotanto kWh</p><p>${prod}</p></div>`;
+            table += `<div class="solar-col"><p>Tietokoneiden kulutus kWh</p><p>${computer_tot}</p></div>`;
+            table += `<div class="solar-col"><p>Aurinkovoiman kattama %-osuus</p><p>${countSolarConsumptionPercentage(prod, computer_tot)}</p></div>`;
+            table += `<div class="solar-col"><p>Verkkovirran %-osuus</p><p>${countNetConsumptionPercentage(prod, computer_tot)}</p></div>`;
+        table += `</div>`;
     }
-    //document.getElementById("table").innerHTML = table;
+    document.getElementById("solar").innerHTML = table;
 }
