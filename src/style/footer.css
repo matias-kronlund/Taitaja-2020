@@ -1,0 +1,50 @@
+footer{
+    height: 400px;
+    background: #3A405A;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+footer svg{
+    height: 50px;
+    display: block;
+    margin: 0;
+}
+
+footer .some a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    margin: 10px;
+    background: #3A405A;
+    border: 1px solid #F9DEC9;  
+}
+a svg{
+    margin: auto;
+    height: 30px;
+    margin-top: 10px;
+}
+a svg path{
+    fill: #F9DEC9;
+}
+.footer-container{
+    margin: 0px 15% 0px 15%;
+    padding-top: 40px;
+}
+.some{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 20px;
+}
+.end{
+    margin-top: 40px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    font-size: 12px;
+    line-height: 100%;
+    color: #F9DEC9;
+}

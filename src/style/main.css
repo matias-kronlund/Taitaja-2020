@@ -33,3 +33,11 @@ i {
     -webkit-transform: rotate(45deg);
     margin-bottom: 2px;
   }
+  .link{
+    margin: 5px;
+    color:#F9DEC9;
+    font-size: 14px;
+}
+.link:hover{
+    color: #F9DEC9;
+}
