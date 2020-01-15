@@ -21,6 +21,12 @@ footer .some a{
     background: #3A405A;
     border: 1px solid #F9DEC9;  
 }
+footer .some a:hover{
+    background: #F9DEC9;
+}
+footer .some a:hover svg path{
+    fill: #3A405A;
+}
 a svg{
     margin: auto;
     height: 30px;
