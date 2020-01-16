@@ -57,3 +57,60 @@ header nav ul{
     color:white;
     font-size: 14px;
 }
+#phone-dropdown{
+    text-align: right;
+    margin-right: 10px;
+    display: none;
+}
+#phone-dropdown button{
+    height: 30px;
+    line-height: 100%;
+    background: none;
+    outline: none;
+    border: none;
+}
+#phone-dropdown button:hover{
+    text-decoration: underline;
+}
+.menu-space1{
+    margin-top: 30px;
+}
+.menu-space2{
+    margin-top: 35px;
+}
+@media only screen and (max-width: 670px){
+    #dropdown-trigger{
+        height: auto;
+    }
+    #phone-dropdown{
+        display: block;
+    }
+    header nav ul{
+        display: none;
+        float: none;
+    }
+    header nav ul li{
+        display: block;
+    }
+    #dropdown{
+        position: unset;
+        height: 100%;
+    }
+    #dropdown-content{
+        height: auto;
+        display: grid;
+        opacity: 1;
+    }
+    #dropdown-content > div{
+        grid-column: 1/3;
+    }
+    #dropdown-content > div > p{
+        display: none;
+    }
+    .menu-space1{
+        margin-top: unset;
+    }
+    .menu-space2{
+        margin-top: unset;
+    }
+}

@@ -18,7 +18,8 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <div id="phone-dropdown"><button class="link" onclick="mobileMenu();">Menu <i class="down"></i></button></i></a></div>
+            <ul id="nav-menu-content">     
                 <li id="dropdown-trigger" >
                     <a class="link">Tietoja <i id="arr" class="down"></i></a> 
                     <div id="dropdown">
@@ -27,13 +28,13 @@
                                 <h3><a href="">Tutustu <i class="right"></i></a></h3>
                                 <h3><a href="">Varainhankinta <i class="right"></i></a></h3>
                                 <h3><a href="">Töihin <i class="right"></i></a></h3>
-                                <h3 style="margin-top: 30px;"><a href="">Tietosuoja <i class="right"></i></a></h3>
+                                <h3 class="menu-space1"><a href="">Tietosuoja <i class="right"></i></a></h3>
                                 <p>Tietosuoja on meille tärkeä ja haluammekin osoittaa, miten ja minkälaisten tehtävien hoitamiseksi henkilötietoja käsittelemme.</p>
                             </div>
                             <div>
                                 <h3><a href="">Laatu <i class="right"></i></a></h3>
                                 <p>Tervetuloa tutustumaan meidän laatuun. Näillä sivuilla kerromme, kuinka me vastaamme toimintansa laadusta eurooppalaisen korkeakoulutusalueen periaatteiden mukaisesti.</p>
-                                <h3 style="margin-top: 35px;"><a href="">Kansainvälisyys <i class="right"></i></a></h3>
+                                <h3 class="menu-space2"><a href="">Kansainvälisyys <i class="right"></i></a></h3>
                                 <p>Kansainvälisty kanssamme! Hyödynnä laajaa kansainvälistä verkostoamme sekä osaamistamme kilpailukykysi kehittäjänä.</p>
                             </div>
                         </div>
@@ -73,6 +74,7 @@
         <div class="menu">
             <button onclick="showSolar();">Panelit</button><button>Koneet</button>
         </div>
+        <h2 class="content-title">Title</h2>
         <div id="solar"></div>
         <div id="computers">
 

@@ -9,7 +9,12 @@ function showSolar(){
         solarstate = true;
     }else{
         document.getElementById("solar").style.display = "none";
-        document.getElementsByClassName("page-content")[0].style.height = "96px";
+        if(window.innerWidth < 680){
+            document.getElementsByClassName("page-content")[0].style.height = "186px";
+        }else{
+            document.getElementsByClassName("page-content")[0].style.height = "96px";
+        }
+        
         document.getElementById("solar").style.opacity = "0";
         solarstate = false;
     }

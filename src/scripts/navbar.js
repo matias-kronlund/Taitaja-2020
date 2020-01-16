@@ -11,6 +11,7 @@ function sizeDropdown(){
         document.getElementById("dropdown").style.right = "0px";
         document.getElementById("dropdown").style.width = "100%";
     }
+    
 }
 $( window ).resize(function() {
     sizeDropdown();
@@ -27,29 +28,50 @@ function display(mode) {
         }, 300);
     } else {
         setTimeout(() => {
-                style.opacity = "0";
+                style.opacity = "";
         }, 300);
     }
 }
 $(function () {
-    $('#dropdown-trigger').hover(function () {
-        $('#dropdown').css('height', '300px');
-        $('#dropdown-content').css('display', 'grid');
-        $('#arr').removeClass('down');
-        $('#arr').addClass('up');
-        if (displaying == false) {
-            display(true);
-            displaying = true;
-        }
-    }, function () {
-        // on mouseout, reset the background colour
-        $('#dropdown').css('height', '0px');
-        $('#dropdown-content').css('display', 'none');
-        $('#arr').removeClass('up');
-        $('#arr').addClass('down');
-        if (displaying == true) {
-            display(false);
-            displaying = false;
-        }
-    });
+        $('#dropdown-trigger').hover(function () {
+        
+            if(window.innerWidth >= 760){
+                $('#dropdown').css('height', '300px');
+                $('#dropdown-content').css('display', 'grid');
+                $('#arr').removeClass('down');
+                $('#arr').addClass('up');
+                if (displaying == false) {
+                    display(true);
+                    displaying = true;
+                }
+            }
+            
+        }, function () {
+            if(window.innerWidth >= 760){
+                $('#dropdown').css('height', '0px');
+                $('#dropdown-content').css('display', 'none');
+                $('#arr').removeClass('up');
+                $('#arr').addClass('down');
+                if (displaying == true) {
+                    display(false);
+                    displaying = false;
+                }
+            }
+            // on mouseout, reset the background colour
+            
+        });
+
 });
+let mobilemenu_state = false;
+function mobileMenu(){
+    if(mobilemenu_state == false){
+        document.getElementById("nav-menu-content").style.display = "block";
+        document.getElementsByTagName("header")[0].style.height = "580px";
+        document.getElementById("dropdown-content").style.display = "";
+        mobilemenu_state = true;
+    }else{
+        document.getElementById("nav-menu-content").style.display = "";
+        document.getElementsByTagName("header")[0].style.height = "";
+        mobilemenu_state = false;
+    }
+}

@@ -1,7 +1,7 @@
 .page-content{
-    height: 96px;
+    height: auto;
     background: red;
-    transition: all ease-in-out 300ms;
+    transition: all ease-in-out 500ms;
 }
 .menu{
     border-top: 3px solid #3A405A   ;
@@ -31,20 +31,21 @@
 }
 #solar{
     opacity: 0;
-    margin: 100px 15%;
+    margin: 20px 15%;
     display: none;
     overflow-y: auto;
-    height: 330px;
+    height: 340px;
     transition: 300ms;
+    border: 1px solid white;
 }
 .slora-data{
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 2px;
     margin-bottom: 10px;
 }
 .solar-title{
     grid-column: 1/6;
+    margin: 3px;
 }
 .solar-title h3 {
     padding: 20px;
@@ -67,6 +68,7 @@
     line-height: 19px;
     color: #99B2DD;
     text-align: right;
+    margin: 3px;
 }
 .solar-col p {
     padding: 10px;
@@ -76,7 +78,12 @@
     border-bottom: 1px solid white;
     
 }
-@media only screen and (max-width: 700px) {
+.content-title{
+    margin-left: 15%;
+    margin-top: 30px;
+    display: none;
+}
+@media only screen and (max-width: 735px) {
     .solar-title{
         grid-column: 1/3;
     }
@@ -84,6 +91,30 @@
         grid-template-columns: repeat(2, auto);
     }
     #solar{
-        padding: 10px;
+        margin: 10px;
+    }
+    .content-title{
+        margin: 10px;
+    }
+    .menu button {
+        margin: 20px auto;
     }
 }
+#solar::-webkit-scrollbar {
+    width: 5px;
+}
+  
+  /* Track */
+  #solar::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  #solar::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  #solar::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

@@ -1,5 +1,5 @@
 footer{
-    height: 400px;
+    height: auto;
     background: #3A405A;
 }
 .footer-container{
@@ -53,4 +53,25 @@ a svg path{
     font-size: 12px;
     line-height: 100%;
     color: #F9DEC9;
+}
+@media only screen and (max-width: 600px){
+    .footer-container{
+        margin: 0px 5% 0px 5%;
+    }
+    .footer-container > div {
+        grid-column: 1/4;
+    }
+    footer .some a{
+        margin: 0px;
+        height: 40px;
+        width: 40px;
+    }
+    a svg{
+        margin: auto;
+        height: 25px;
+        margin-top: 6px;
+    }
+    .some{
+        text-align: left;
+    }
 }
