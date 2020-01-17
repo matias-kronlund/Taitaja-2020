@@ -34,7 +34,7 @@
     margin: 20px 15%;
     display: none;
     overflow-y: auto;
-    height: 340px;
+    height: 370px;
     transition: 300ms;
     border: 1px solid white;
 }

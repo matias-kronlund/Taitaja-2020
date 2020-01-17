@@ -1,0 +1,58 @@
+.login{
+    position: fixed;
+    height: 400px;
+    width: 300px;
+    top: 20%;
+    left: 50%;
+    margin-left: -200px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 50px;
+}
+.login * {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+.login input{
+    width: 250px;
+}
+.login button{
+    width: 250px;
+    height: 47px;
+    left: 219px;
+    top: 22px;
+
+    background: #FFFFFF;
+    border: 1px solid #3A405A;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Segoe UI;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+text-align: center;
+
+color: #3A405A;
+}
+.login button:hover{
+    background: #3A405A;
+    border: 1px solid #3A405A;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
