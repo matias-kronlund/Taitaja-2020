@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#floorConatiner{
+    width: 425px;
+    margin: auto;
+}
+.floor2{
+    height: 268px;
+    width: 400px;
+}
+.floor2 img{
+    position: absolute;
+    height: 268px;
+}
+.floor1{
+    height: 268px;
+    width: 425px;
+}
+.floor1 img{
+    position: absolute;
+    height: 268px;
+}
+.comp{
+    display: inline-block;
+    margin: 1px;
+}
+.room{
+    position: absolute;
+}
+.rtop{
+    margin-top: 6px;
+    height: 40px;
+}
+.rdown{
+    margin-top: 223px;
+    height: 40px;
+}
+#room-23{
+    margin-left: 171px;
+    width: 62px;
+}
+#room-24{
+    width: 64px;
+    margin-left: 90px;
+}
+#room-25{
+    width: 70px;
+    margin-left:9px;
+}
+#room-26{
+    margin-left: 9px;
+    width: 70px;
+}
+#room-27{
+    margin-left: 91px;
+    width: 64px;
+}
+#room-28{
+    margin-left: 171px;
+    width: 62px;
+}
+
+#room-11{
+    margin-left: 322px;
+    width: 70px;
+}
+#room-12{
+    margin-left: 244px;
+    width: 64px;
+}
+#room-13{
+    margin-left: 165px;
+    width: 64px;
+}
+#room-14{
+    margin-left: 90px;
+    width: 58px;
+}
+#room-15{
+    width: 70px;
+    margin-left:9px;
+}
+#room-16{
+    margin-left: 9px;
+    width: 70px;
+}
+#room-17{
+    margin-left: 93px;
+    width: 60px;
+}
+#room-18{
+    margin-left: 164px;
+    width: 68px;
+}
