@@ -7,6 +7,12 @@ header{
     top: 0;
     z-index: 100;
 }
+nav svg{
+    display: none;
+    height: 30px;
+    margin: 10px;
+    width: 90px;
+}
 header nav ul li{
     color: #F9DEC9;
     display: inline-block;
@@ -79,6 +85,10 @@ header nav ul{
     margin-top: 35px;
 }
 @media only screen and (max-width: 670px){
+    nav svg{
+        display: block;
+        float: left;
+    }
     #dropdown-trigger{
         height: auto;
     }
@@ -112,5 +122,8 @@ header nav ul{
     }
     .menu-space2{
         margin-top: unset;
+    }
+    #main-logo{
+        display: none;
     }
 }
