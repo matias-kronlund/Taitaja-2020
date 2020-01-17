@@ -1,6 +1,6 @@
 .page-content{
     height: auto;
-    background: red;
+    background: #F9DEC9;
     transition: all ease-in-out 500ms;
 }
 .menu{

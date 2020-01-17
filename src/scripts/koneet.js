@@ -214,6 +214,9 @@ function optfunc(){
             else{
                 comp_char = "C";
             }
+            if(window.innerWidth < 700){
+                comp_char = "";
+            }
             for(var i = 0; i < parseInt(r.amount); i++){
                 cont += `<p class='comp' style='background: ${r.color};'>${comp_char}</p>`;
             }
@@ -234,6 +237,9 @@ function optfunc(){
             else{
                 comp_char = "C";
             }
+            if(window.innerWidth < 700){
+                comp_char = "";
+            }
             for(var i = 0; i < parseInt(r.amount); i++){
                 cont += `<p class='comp' style='background: ${r.color};'>${comp_char}</p>`;
             }
@@ -242,4 +248,13 @@ function optfunc(){
         state=false;
     }
     
+}
+if(innerWidth < 400){
+    for(room of opt){
+        let margin = $("#room-"+room.room).css("margin-left");
+        let intmargin = parseInt(margin.split("px")[0]);
+        $("#room-"+room.room).css("margin-left", intmargin * 0.78 + "px");
+        $("#room-"+room.room).css("width", "40px");
+        console.log(room.room, intmargin);
+    }
 }

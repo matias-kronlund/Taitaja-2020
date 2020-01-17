@@ -2,6 +2,59 @@
     margin: 0;
     padding: 0;
 }
+#opt-button{
+    background: #FFFFFF;
+    border: 1px solid #3A405A;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 293px;
+    height: 47px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #3A405A;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 300ms;
+}
+#opt-button:hover{
+    width: 293px;
+    height: 47px;
+    left: 219px;
+    top: 93px;
+    background: #3A405A;
+    border: 1px solid #3A405A;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+#floorPlans{
+    transition: 300ms;
+    display: none;
+    opacity: 0;
+    padding: 20px;
+}
+#floorPlans h2{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 45px;
+    color: #3A405A;
+}
 #floorConatiner{
     width: 425px;
     margin: auto;
@@ -28,6 +81,7 @@
 }
 .room{
     position: absolute;
+    line-height: 15px;
 }
 .rtop{
     margin-top: 6px;
@@ -93,4 +147,39 @@
 #room-18{
     margin-left: 164px;
     width: 68px;
+}
+#floorPlans p{
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    line-height: 15px;
+}
+@media only screen and (max-width: 735px) {
+    #floorPlans{
+        padding: 0px;
+        overflow: hidden;
+    }
+    #floorPlans img{
+        overflow: hidden;
+        width:100%;
+
+    }
+    .floor2 > div , .floor1 > div{
+        width: 50px;
+    }
+    #floorPlans p{
+        width: 5px;
+        height: 5px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .floor2 div , .floor1 div{
+        width: 30px;
+    }
+    #opt-button{
+        margin-left: 10px;
+    }
+
 }
